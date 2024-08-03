@@ -11,4 +11,4 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/", router);
 
 const PORT = 3000;
-app.listen(PORT, () => console.log(`My first Express app - listening on port ${PORT}!`));
+app.listen(PORT, "0.0.0.0", () => console.log(`My first Express app - listening on port ${PORT}!`));
